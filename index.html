@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Task Manager</h1>
+      <form id="taskForm">
+        <div class="titleForm">
+          <label for="title">Title:</label>
+          <input
+            type="text"
+            id="title"
+            placeholder="Enter title here"
+            required
+          />
+        </div>
+
+        <div class="formDesc">
+          <label for="description">Description:</label>
+          <textarea
+            id="description"
+            placeholder="Enter description here"
+            required
+          ></textarea>
+        </div>
+
+        <div class="formDate">
+          <label for="dueDate">Due Date:</label>
+          <input type="date" id="dueDate" required />
+        </div>
+
+        <div class="formPriority">
+          <label for="priority">Priority:</label>
+          <select id="priority" required>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+
+        <label for="typeOfWork">Type of Work:</label>
+        <select id="typeOfWork" name="typeOfWork">
+          <option value="Coding">Coding</option>
+          <option value="Design">Design</option>
+          <option value="Writing">Writing</option>
+        </select>
+        <div class="btns">
+          <button type="submit" id="addTaskBtn">Add Task</button>
+          <button type="button" id="updateTaskBtn" style="display: none">
+            Update Task
+          </button>
+          <button type="button" id="sortByPriorityBtn">Sort by Priority</button>
+          <button type="button" id="sortByDueDateBtn">Sort by Due Date</button>
+        </div>
+      </form>
+
+      <div id="taskList"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

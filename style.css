@@ -1,0 +1,133 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #1d2b64; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f8cdda,
+    #1d2b64
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f8cdda,
+    #1d2b64
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: auto;
+  padding: 48px;
+  width: 100%;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #5e4a5b;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+#taskForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#taskForm label {
+  display: block;
+  margin-top: 10px;
+}
+
+#taskForm select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+input,
+textarea,
+select,
+button {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  width: 30%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#taskList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.task {
+  background-color: #ebd4ed;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task h3 {
+  margin-top: 0;
+  color: #343a40;
+}
+
+.task p {
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.task.completed {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.task.priority-low {
+  border-left: 5px solid #28a745;
+}
+
+.task.priority-medium {
+  border-left: 5px solid #ffc107;
+}
+
+.task.priority-high {
+  border-left: 5px solid #dc3545;
+}

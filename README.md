@@ -23,5 +23,5 @@ Welcome to the To-Do List project! This project allows you to manage your tasks 
 
 ```bash
 git clone https://github.com/vansh534/Task-Manager.git
-cd to-do-list
+cd Task-Manager
 ```
